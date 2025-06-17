@@ -1,14 +1,12 @@
-# conteudocongresso
-Criação de um programa automatizado para realizar o webscraping do site do congresso nacional e obter as informações de: 1) Agenda das Votações 2) Alterações realizadas nos Projetos de Lei
+![image](https://github.com/user-attachments/assets/7e200c8c-48d9-4741-a87b-3b14a4378835)# Automação do Monitoramento do Conteúdo do Congresso
+Criação de um programa automatizado para realizar diariamente o monitoramento dos sites da Câmara dos Deputados e do Senado Federal e obter as informações sobre alterações nos Projetos de Lei, Emendas Parlamentares, Requerimentos e Audiências que englobam assuntos relacionados às áreas de Saneamento Básico, Meio Ambiente e Defesa Civil. 
 
-Etapa 1: Conhecer detalhadamente o caminho para acesso aos dados.
-  url: https://www.camara.leg.br/ 
-  Agenda 
-  Alterar Data Inicial (toda segunda-feira)
-  Alterar Data Final (toda sexta-feira)
-  Baixar os dados em PDF
-Etapa 2: Armazenar todos os caminhos de acesso aos dados de forma amigável ao programa.
-Etapa 3: Obter os dados.
-Etapa 4: Processar os dados obtidos.
-  Filtrar somente os eventos relacionados às áreas de interesse. 
-Etapa 5: Encaminhar as informações por e-mail. 
+Após realizar uma varredura nos sites, o programa encaminha um relatório por e-mail com projetos relevantes às áreas técnicas da Confederação Nacional de Municípios. 
+
+# Ferramenta Utilizada 
+Python 
+
+# Etapas
+
+![image](https://github.com/user-attachments/assets/0e08de92-a409-4ac9-8ff0-150edd0ec4f1)
+
