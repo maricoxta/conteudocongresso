@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7e200c8c-48d9-4741-a87b-3b14a4378835)# Automação do Monitoramento do Conteúdo do Congresso
+# Automação do Monitoramento do Conteúdo do Congresso
 Criação de um programa automatizado para realizar diariamente o monitoramento dos sites da Câmara dos Deputados e do Senado Federal e obter as informações sobre alterações nos Projetos de Lei, Emendas Parlamentares, Requerimentos e Audiências que englobam assuntos relacionados às áreas de Saneamento Básico, Meio Ambiente e Defesa Civil. 
 
 Após realizar uma varredura nos sites, o programa encaminha um relatório por e-mail com projetos relevantes às áreas técnicas da Confederação Nacional de Municípios. 
