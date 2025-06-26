@@ -1,0 +1,117 @@
+[
+    {
+        "id": 76388,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76388",
+        "dataHoraInicio": "2025-06-24T10:00",
+        "dataHoraFim": null,
+        "situacao": "Cancelada",
+        "descricao": "Projeto Santa Quitéria\r\n Em atendimento ao Requerimento nº 27/2025, de autoria do Dep. Max Lemos.\r\n\r\nParticipantes:\r\n1. Julevânia Alves Olegário, Diretora-Substituta da Secretaria Nacional de Geologia, Mineração e Transformação Mineral do Ministério de Minas e Energia - MME; (CONFIRMADO)\r\n2. Representante do Insitutto Brasileiro de Meio Ambiente e Recursos Renováveis - IBAMA;\r\n3. Representante do Comissão Nacional de Energia Nuclear - CNEN;\r\n4. Adauto Seixas, Presidente das Indústrias Nucleares do Brasil; (CONFIRMADO)\r\n5. Representante do Estado do Ceará;\r\n6. Representante da Galvani Fertilizantes;\r\n7. Representante Local das Comunidades Impactadas",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 2012,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/2012",
+                "sigla": "CME",
+                "nome": "Comissão de Minas e Energia",
+                "apelido": "Minas e Energia",
+                "codTipoOrgao": 2,
+                "tipoOrgao": "Comissão Permanente",
+                "nomePublicacao": "Comissão de Minas e Energia",
+                "nomeResumido": "Minas e Energia"
+            }
+        ]
+    },
+    {
+        "id": 76609,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76609",
+        "dataHoraInicio": "2025-06-24T14:30",
+        "dataHoraFim": null,
+        "situacao": "Cancelada",
+        "descricao": "\"Debater os impactos ambientais, sanitários e econômicos decorrentes da eventual proibição da caça ao javali-europeu (Sus Scrofa)\"\r\n Requerimento nº 77/2025 de autoria do Deputado Zé Trovão - PL/SC\r\n\r\n\r\nCONVIDADOS:\r\n\r\nMinistério da Agricultura e Pecuária - MAPA\r\n\r\nInstituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis - IBAMA\r\n\r\nEmpresa Brasileira de Pesquisa Agropecuária - EMBRAPA\r\n\r\nConfederação da Agricultura e Pecuária do Brasil - CNA\r\n\r\nRepresentante da Frente Parlamentar Agropecuária - FPA\r\n\r\nRAFAEL SALERMO\r\nAssociação Brasileira de Caçadores\r\n\r\nDANIEL TERRA\r\nAssociação Nacional de Caça e Conservação\r\n\r\nJOSÉ ZEFERINO PEDROO\r\nFederação da Agricultura  e Pecuária do Estado de Santa Catarina\r\n\r\nSÔNIA FONSECA\r\nFórum Nacional de Proteção e Defesa Animal\r\n\r\nCooperativa Agropecuária Planalto Serrano - COPERLAN\r\n\r\nDeputado Estadual Lucas Neves (PODEMOS-SC)\r\n\r\nMinistro Kassio Nunes Marques (Relator da ADI 7.808) - STF\r\n\r\nPresidente da Comissão de Agropecuária e Agroindústria da \r\nAssembléia Legislativa do Estado de Minas Gerais - ALMG\r\n\r\nPAULO BEZERRA\r\nProfessor e Coordenador do Controle de Capivaras e Javalis da Universidade de São Paulo\r\n\r\nRepresentante da Federação da Agricultura e Pecuária do Estado de Minas Gerais - FAEMG",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 2001,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/2001",
+                "sigla": "CAPADR",
+                "nome": "Comissão de Agricultura, Pecuária, Abastecimento e Desenvolvimento Rural",
+                "apelido": "Agricultura, Pecuária, Abastecimento e Desenvolvimento Rural",
+                "codTipoOrgao": 2,
+                "tipoOrgao": "Comissão Permanente",
+                "nomePublicacao": "Comissão de Agricultura, Pecuária, Abastecimento e Desenvolvimento Rural",
+                "nomeResumido": "Agropecuária"
+            }
+        ]
+    },
+    {
+        "id": 76774,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76774",
+        "dataHoraInicio": "2025-06-24T10:11",
+        "dataHoraFim": "2025-06-24T12:25",
+        "situacao": "Encerrada (Final)",
+        "descricao": "Perigos do uso do mercúrio para fins odontológicos e os impactos na saúde humana\r\n REQ 28/25, do Deputado Nilto Tatto (PT-SP)\r\n\r\nConvidados: \r\n\r\nMesa 1 - Por que a Odontologia deve estar livre do mercúrio?\r\nSOCORRO MENDONÇA (presença confirmada)\r\nVereadora de Peruíbe-SP\r\nCECILIA ZAVARIZ (presença confirmada)\r\nMédica Sanitarista e Doutora pela Universidade de São Paulo (USP)\r\nJEFFER CASTELLO BRANCO (presença confirmada) \r\nDoutor em Ciências pela Universidade Federal de São Paulo (USP)\r\nMARTHA FAISSOL (presença confirmada)\r\nDiretora da International Academy of Oral Medicine and Toxicology no Brasil (IAOMT)\r\nMAGDA SIQUEIRA (presença confirmada)\r\nEspecialista em Endodontia e Dentística Restauradora\r\n\r\nMesa 2 - Trabalhadores expostos e intoxicados pelo mercúrio metálico\r\nVALDIVINO ROCHA (presença confirmada)\r\nPresidente da Associação dos Trabalhadores Expostos e Intoxicados pelo Mercúrio Metálico (AEIMM)\r\nFRANCISCA DE OLIVEIRA (presença confirmada)\r\nDiretora da Associação dos Trabalhadores Expostos e Intoxicados pelo Mercúrio Metálico (AEIMM)",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 6174,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/6174",
+                "sigla": "CMADS",
+                "nome": "Comissão de Meio Ambiente e Desenvolvimento Sustentável",
+                "apelido": "Meio Ambiente e Desenvolvimento Sustentável",
+                "codTipoOrgao": 2,
+                "tipoOrgao": "Comissão Permanente",
+                "nomePublicacao": "Comissão de Meio Ambiente e Desenvolvimento Sustentável",
+                "nomeResumido": "Meio Ambiente"
+            }
+        ]
+    },
+    {
+        "id": 76994,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76994",
+        "dataHoraInicio": "2025-06-24T09:00",
+        "dataHoraFim": "2025-06-24T18:00",
+        "situacao": "Encerrada",
+        "descricao": "Energy Summit Global 2025\r\n (Requerimento nº 27, de 2025, do Deputado Ricardo Barros)\r\n\r\nEnergy Summit Global 2025, evento de referência focado em inovação e empreendedorismo nos setores de energia e sustentabilidade.",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 2002,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/2002",
+                "sigla": "CCTI",
+                "nome": "Comissão de Ciência, Tecnologia e Inovação",
+                "apelido": "Ciência, Tecnologia e Inovação",
+                "codTipoOrgao": 2,
+                "tipoOrgao": "Comissão Permanente",
+                "nomePublicacao": "Comissão de Ciência, Tecnologia e Inovação",
+                "nomeResumido": "Ciência e Tecnologia"
+            }
+        ]
+    },
+    {
+        "id": 76995,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76995",
+        "dataHoraInicio": "2025-06-25T09:00",
+        "dataHoraFim": "2025-06-25T18:00",
+        "situacao": "Encerrada",
+        "descricao": "Energy Summit Global 2025\r\n (Requerimento nº 27, de 2025, do Deputado Ricardo Barros)\r\n\r\nEnergy Summit Global 2025, evento de referência focado em inovação e empreendedorismo nos setores de energia e sustentabilidade.\r\n\r\nParticipação de comissão representativa da CCTI.",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 2002,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/2002",
+                "sigla": "CCTI",
+                "nome": "Comissão de Ciência, Tecnologia e Inovação",
+                "apelido": "Ciência, Tecnologia e Inovação",
+                "codTipoOrgao": 2,
+                "tipoOrgao": "Comissão Permanente",
+                "nomePublicacao": "Comissão de Ciência, Tecnologia e Inovação",
+                "nomeResumido": "Ciência e Tecnologia"
+            }
+        ]
+    }
+]

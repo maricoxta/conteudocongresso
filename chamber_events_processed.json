@@ -1,0 +1,347 @@
+[
+    {
+        "id": 76388,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76388",
+        "dataHoraInicio": "2025-06-24T10:00",
+        "dataHoraFim": null,
+        "situacao": "Cancelada",
+        "descricao": "Projeto Santa Quitéria\r\n Em atendimento ao Requerimento nº 27/2025, de autoria do Dep. Max Lemos.\r\n\r\nParticipantes:\r\n1. Julevânia Alves Olegário, Diretora-Substituta da Secretaria Nacional de Geologia, Mineração e Transformação Mineral do Ministério de Minas e Energia - MME; (CONFIRMADO)\r\n2. Representante do Insitutto Brasileiro de Meio Ambiente e Recursos Renováveis - IBAMA;\r\n3. Representante do Comissão Nacional de Energia Nuclear - CNEN;\r\n4. Adauto Seixas, Presidente das Indústrias Nucleares do Brasil; (CONFIRMADO)\r\n5. Representante do Estado do Ceará;\r\n6. Representante da Galvani Fertilizantes;\r\n7. Representante Local das Comunidades Impactadas",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 2012,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/2012",
+                "sigla": "CME",
+                "nome": "Comissão de Minas e Energia",
+                "apelido": "Minas e Energia",
+                "codTipoOrgao": 2,
+                "tipoOrgao": "Comissão Permanente",
+                "nomePublicacao": "Comissão de Minas e Energia",
+                "nomeResumido": "Minas e Energia"
+            }
+        ]
+    },
+    {
+        "id": 76450,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76450",
+        "dataHoraInicio": "2025-06-24T11:36",
+        "dataHoraFim": "2025-06-24T12:33",
+        "situacao": "Encerrada",
+        "descricao": "Homengem ao Dia Nacional do Teste do Pezinho\r\n Homengem ao Dia Nacional do Teste do Pezinho",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 180,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/180",
+                "sigla": "PLEN",
+                "nome": "Plenário",
+                "apelido": "Plenário",
+                "codTipoOrgao": 26,
+                "tipoOrgao": "Plenário Virtual",
+                "nomePublicacao": "Plenário",
+                "nomeResumido": "Plenário"
+            }
+        ]
+    },
+    {
+        "id": 76609,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76609",
+        "dataHoraInicio": "2025-06-24T14:30",
+        "dataHoraFim": null,
+        "situacao": "Cancelada",
+        "descricao": "\"Debater os impactos ambientais, sanitários e econômicos decorrentes da eventual proibição da caça ao javali-europeu (Sus Scrofa)\"\r\n Requerimento nº 77/2025 de autoria do Deputado Zé Trovão - PL/SC\r\n\r\n\r\nCONVIDADOS:\r\n\r\nMinistério da Agricultura e Pecuária - MAPA\r\n\r\nInstituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis - IBAMA\r\n\r\nEmpresa Brasileira de Pesquisa Agropecuária - EMBRAPA\r\n\r\nConfederação da Agricultura e Pecuária do Brasil - CNA\r\n\r\nRepresentante da Frente Parlamentar Agropecuária - FPA\r\n\r\nRAFAEL SALERMO\r\nAssociação Brasileira de Caçadores\r\n\r\nDANIEL TERRA\r\nAssociação Nacional de Caça e Conservação\r\n\r\nJOSÉ ZEFERINO PEDROO\r\nFederação da Agricultura  e Pecuária do Estado de Santa Catarina\r\n\r\nSÔNIA FONSECA\r\nFórum Nacional de Proteção e Defesa Animal\r\n\r\nCooperativa Agropecuária Planalto Serrano - COPERLAN\r\n\r\nDeputado Estadual Lucas Neves (PODEMOS-SC)\r\n\r\nMinistro Kassio Nunes Marques (Relator da ADI 7.808) - STF\r\n\r\nPresidente da Comissão de Agropecuária e Agroindústria da \r\nAssembléia Legislativa do Estado de Minas Gerais - ALMG\r\n\r\nPAULO BEZERRA\r\nProfessor e Coordenador do Controle de Capivaras e Javalis da Universidade de São Paulo\r\n\r\nRepresentante da Federação da Agricultura e Pecuária do Estado de Minas Gerais - FAEMG",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 2001,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/2001",
+                "sigla": "CAPADR",
+                "nome": "Comissão de Agricultura, Pecuária, Abastecimento e Desenvolvimento Rural",
+                "apelido": "Agricultura, Pecuária, Abastecimento e Desenvolvimento Rural",
+                "codTipoOrgao": 2,
+                "tipoOrgao": "Comissão Permanente",
+                "nomePublicacao": "Comissão de Agricultura, Pecuária, Abastecimento e Desenvolvimento Rural",
+                "nomeResumido": "Agropecuária"
+            }
+        ]
+    },
+    {
+        "id": 76746,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76746",
+        "dataHoraInicio": "2025-06-24T13:06",
+        "dataHoraFim": "2025-06-24T15:53",
+        "situacao": "Encerrada",
+        "descricao": "Necessidade de convocação de todos (as) aprovados (as) no Concurso Público Nacional Unificado (CPNU), vagas imediatas e Cadastro de Reserva.\r\n REQ 18/2025 CASP, de autoria da deputada Erika Kokay\r\n\r\n\r\n1) DÉBORA HERNANDES FIGUEIRA (Confirmada)\r\n   Coordenadora-Geral da Administração de Pessoas e Folha de Pagamento\r\n   Ministério do Trabalho e Emprego - MTE\r\n\r\n2) MATHEUS ALVES KLEIN VIANA (Confirmado)\r\n   Diretor do Departamento de Fiscalização do Trabalho\r\n   Ministério do Trabalho e Emprego | MTE\r\n\r\n3) MÔNICA MACHADO CARNEIRO (Confirmada)\r\n   Diretora de Comunicação e Imprensa\r\n   Sindicato dos Servidores Públicos Federais no Distrito Federal - Sindsep – DF\r\n\r\n4) PEDRO ARMENGOL DE SOUZA (Confirmado)\r\n   Diretor de Finanças\r\n   Confederação Nacional dos Trabalhadores no Serviço Público Federal | Condsef\r\n\r\n5) REGINA COELI MOREIRA CAMARGOS (Confirmada)\r\n   Secretária Adjunta de Gestão de Pessoas\r\n   Ministério da Gestão e da Inovação em Serviços Públicos | MGI e Escola Nacional de Administração Pública – Enap\r\n\r\n6) ROBSON FERNANDES MOTA (Confirmado)\r\n   Coordenador-Geral de Carreiras, Desenvolvimento de Pessoas e Qualidade de Vida\r\n   Ministério do Trabalho e Emprego | MTE",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 539388,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/539388",
+                "sigla": "CASP",
+                "nome": "Comissão de Administração e Serviço Público",
+                "apelido": "Administração e Serviço Público",
+                "codTipoOrgao": 2,
+                "tipoOrgao": "Comissão Permanente",
+                "nomePublicacao": "Comissão de Administração e Serviço Público",
+                "nomeResumido": "Serviço Público"
+            }
+        ]
+    },
+    {
+        "id": 76774,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76774",
+        "dataHoraInicio": "2025-06-24T10:11",
+        "dataHoraFim": "2025-06-24T12:25",
+        "situacao": "Encerrada (Final)",
+        "descricao": "Perigos do uso do mercúrio para fins odontológicos e os impactos na saúde humana\r\n REQ 28/25, do Deputado Nilto Tatto (PT-SP)\r\n\r\nConvidados: \r\n\r\nMesa 1 - Por que a Odontologia deve estar livre do mercúrio?\r\nSOCORRO MENDONÇA (presença confirmada)\r\nVereadora de Peruíbe-SP\r\nCECILIA ZAVARIZ (presença confirmada)\r\nMédica Sanitarista e Doutora pela Universidade de São Paulo (USP)\r\nJEFFER CASTELLO BRANCO (presença confirmada) \r\nDoutor em Ciências pela Universidade Federal de São Paulo (USP)\r\nMARTHA FAISSOL (presença confirmada)\r\nDiretora da International Academy of Oral Medicine and Toxicology no Brasil (IAOMT)\r\nMAGDA SIQUEIRA (presença confirmada)\r\nEspecialista em Endodontia e Dentística Restauradora\r\n\r\nMesa 2 - Trabalhadores expostos e intoxicados pelo mercúrio metálico\r\nVALDIVINO ROCHA (presença confirmada)\r\nPresidente da Associação dos Trabalhadores Expostos e Intoxicados pelo Mercúrio Metálico (AEIMM)\r\nFRANCISCA DE OLIVEIRA (presença confirmada)\r\nDiretora da Associação dos Trabalhadores Expostos e Intoxicados pelo Mercúrio Metálico (AEIMM)",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 6174,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/6174",
+                "sigla": "CMADS",
+                "nome": "Comissão de Meio Ambiente e Desenvolvimento Sustentável",
+                "apelido": "Meio Ambiente e Desenvolvimento Sustentável",
+                "codTipoOrgao": 2,
+                "tipoOrgao": "Comissão Permanente",
+                "nomePublicacao": "Comissão de Meio Ambiente e Desenvolvimento Sustentável",
+                "nomeResumido": "Meio Ambiente"
+            }
+        ]
+    },
+    {
+        "id": 76828,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76828",
+        "dataHoraInicio": "2025-06-24T09:00",
+        "dataHoraFim": "2025-06-24T13:24",
+        "situacao": "Encerrada",
+        "descricao": "Feminicídios ocorridos no estado do Rio Grande do Sul\r\n Pauta: Plano de trabalho participativo com a comunidade estudantil e especialistas na área de segurança pública\r\n\r\nLocal:\r\nAuditório Ipê\r\n2º andar do Espaço Cultural da Universidade Federal do Estado do Rio Grande do Sul –UFRGS\r\nR. Eng. Luiz Englert, 333 -Farroupilha, Porto Alegre/RS\r\n\r\nComposição da Comissão Externa:\r\nDeputada Fernanda Melchionna - PSOL/RS, Coordenadora\r\nDeputada Maria do Rosário - PT/RS, Relatora\r\nDeputada Any Ortiz - Cidadania/RS, Subcoordenadora\r\nDeputada Daiana Santos - PcdoB/RS, Subcoordenadora\r\nDeputada Denise Pessôa - PT/RS, Subcoordenadora\r\nDeputada Franciane Bayer - Republicanos/RS, Subcoordenadora\r\n\r\nConvidadas (confirmadas):\r\n\r\n- MÁRCIA BARBOSA - Reitora da Universidade Federal do Rio Grande do Sul - UFRGS.\r\n- LÍGIA MORI MADEIRA - Coordenadora do Núcleo de Estudos em Direitos, Instituições Judiciais e Políticas Públicas e o Observatório da Violência de Gênero: feminicídios, violência doméstica e violência política.\r\n- VALERIA CALVI - Coordenadora do observatório de violências de gênero da UFRGS.\r\n- CARMEN CAMPOS - Professora visitante no Programa de Mestrado em Direito e Justiça Social da Universidade Federal de Rio Grande (FURG).\r\n- VALDETE SOUTO SEVERO - Professora de direito e processo do trabalho na UFRGS, juíza do trabalho da 4ª Região, pesquisadora do Grupo de Pesquisa Trabalho e Capital e membra da Rede Nacional de Pesquisa e Estudos em Direito do Trabalho e Previdência Social. \r\n- THAIS PEREIRA SIQUEIRA - Psicóloga, coordenadora do Centro de Referência para Mulheres em Situação de Violência Patrícia Esber. Integrante do Levante Feminista contra o Feminicídio, Transfeminicídio e Lesbocídio RS e Coordenação do Observatório Lupa Feminista, Suplente de Coordenação da ONG Coletivo Feminino Plural.\r\n- CRISTIANE BUZATTO - Juíza da  4ª Vara do Júri da Comarca de Porto Alegre.\r\n- ROCHELE FACHINETTO -  Coordenadora do Grupo de Pesquisa Violência e Cidadania - UFRGS/CNPq.\r\n- STELA FARIAS - Deputada e Coordenadora da Força-Tarefa de Combate ao Feminicídio da Assembleia Legislativa do Estado do Rio Grande do Sul.",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 539796,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/539796",
+                "sigla": "CEXRSFEM",
+                "nome": "Comissão Externa destinada a acompanhar os graves casos de feminicídios ocorridos no Estado do Rio Grande do Sul",
+                "apelido": "Feminicídios ocorridos no Estado do Rio Grande do Sul",
+                "codTipoOrgao": 5,
+                "tipoOrgao": "Comissão Externa",
+                "nomePublicacao": "Comissão Externa sobre os Feminicídios ocorridos no Estado do Rio Grande do Sul",
+                "nomeResumido": "Feminicídios no Rio Grande do Sul"
+            }
+        ]
+    },
+    {
+        "id": 76884,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76884",
+        "dataHoraInicio": "2025-06-24T14:23",
+        "dataHoraFim": "2025-06-24T15:36",
+        "situacao": "Encerrada (Final)",
+        "descricao": "Dia Nacional de Conscientização sobre a Fissura Labiopalatina\r\n Requerimento nº 95/2025 CSAUDE, do Dep. Augusto Puppio (MDB - AP)\r\n\r\nConvidados confirmados:\r\n\r\n-Thyago Cezar\r\nVice-Presidente da Rede Profis Nacional\r\n\r\n-Ivy Suedam\r\nProfessora do Hospital de Reabilitação de Anomalias Craniofaciais da Universidade de São Paulo (HRAC-USP)\r\n\r\n-Marconi Delmiro\r\nCoordenador do Serviço Multidisciplinar de Atendimento a Fissurados do Hospital Regional da Asa Norte (HRAN)\r\n\r\n-Maria José Micheletti (virtual)\r\nPresidente da Associação dos Fissurados de Rondônia (ASFIR)\r\n\r\n-Maria Natália Leite (virtual)\r\nProfessora da Universidade Federal de Sergipe (UFS-SE)\r\n\r\n-Carmem Moura (virtual)\r\nCoordenadora da Coordenação Geral de Atenção Especializada do Ministério da Saúde",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 2014,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/2014",
+                "sigla": "CSAUDE",
+                "nome": "Comissão de Saúde",
+                "apelido": "Saúde",
+                "codTipoOrgao": 2,
+                "tipoOrgao": "Comissão Permanente",
+                "nomePublicacao": "Comissão de Saúde",
+                "nomeResumido": "Saúde"
+            }
+        ]
+    },
+    {
+        "id": 76907,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76907",
+        "dataHoraInicio": "2025-06-24T14:25",
+        "dataHoraFim": "2025-06-24T16:25",
+        "situacao": "Encerrada (Final)",
+        "descricao": "Pós-Graduação stricto sensu - Objetivo 15 do PNE\r\n Tema: Pós-Graduação stricto sensu - Objetivo 15 do Plano Nacional de Educação.\r\n\r\nConvidados:\r\n\r\nANTONIO GOMES DE SOUZA FILHO, Diretor de Avaliação e Presidente Substituto da Fundação Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Capes; e YURI GHOBAD DA SILVA, Coordenador Geral de Governança da Capes (REQs 2 e 29/25) - (confirmados);\r\n\r\nOLIVAL FREIRE JUNIOR, Diretor Científico e Presidente Substituto do Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq (REQ 29/25) - (confirmado);\r\n\r\nMIRIAM FÁBIA ALVES, Presidente da Associação Nacional de Pós-Graduação e Pesquisa em Educação - Anped (REQs 22/25, 29/25, 43/25 e 56/25) - (confirmada);\r\n\r\nROGEAN VINICIUS SANTOS SOARES, Presidente da Associação Nacional de Pós-Graduandos - ANPG (REQ 29/25) - (confirmado);\r\n\r\nFERNANDA  ANTÔNIA DA FONSECA SOBRAL, Diretora da Sociedade Brasileira para o Progresso da Ciência - SBPC (REQ 29/25) - (confirmada) e\r\n\r\nHÉLIO DIAS, Presidente do Instituto para a Valorização da\nEducação e da Pesquisa no Estado de São Paulo - IVEPESP (REQ 2/25) - (confirmado).\r\n\r\n\r\n(Requerimento nº 2/2025, da Dep. Adriana Ventura)\r\n(Requerimento nº 22/2025, da Dep. Maria do Rosário)\r\n(Requerimento nº 29/2025, das Deps. Tabata Amaral e Socorro Neri e dos Deps. Moses Rodrigues, Pedro Uczai e Rafael Brito)\r\n(Requerimentos nºs 43 e 56/2025, da Dep. Carol Dartora)",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 539777,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/539777",
+                "sigla": "PL261424",
+                "nome": "Comissão Especial destinada a proferir parecer ao Projeto de Lei n. 2614, de 2024, do Poder Executivo, que \"aprova o Plano Nacional de Educação para o decênio 2024-2034\"",
+                "apelido": "PL 2614/24 - Plano Nacional de Educação decênio 2024-2034",
+                "codTipoOrgao": 3,
+                "tipoOrgao": "Comissão Especial",
+                "nomePublicacao": "Comissão Especial sobre o Plano Nacional de Educação 2024-2034 (PL 2614/24)",
+                "nomeResumido": "PNE 2024-2034"
+            }
+        ]
+    },
+    {
+        "id": 76928,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76928",
+        "dataHoraInicio": "2025-06-24T10:00",
+        "dataHoraFim": null,
+        "situacao": "Cancelada",
+        "descricao": "Efeitos da violência do Estado sobre a sociedade brasileira\r\n Requerimento n. 36/2025\r\n\r\nAutor: Deputado Reimont (PT/RJ)\r\n\r\nConvidados:\r\n\r\n1. Representante do Movimento Mães de Maio; \r\n\r\n2. Representante do Movimento Mães do Curió; \r\n\r\n3. Representante da Rede de Mães e Familiares da Baixada Fluminense; \r\n\r\n4. Representante da Movimento Mães de Maio da Bahia;\r\n\r\n5. Representante do Movimento Negro Unificado; \r\n\r\n6. Padre Júlio Lancelotti; \r\n\r\n7. Representante da Defensoria Pública do Estado do Rio de Janeiro; \r\n\r\n8. Representante da Defensoria Pública do Estado de São Paulo; \r\n\r\n9. Representante da Conectas Direitos Humanos; \r\n\r\n10. Representante da Iniciativa Negra por uma Nova Política de Drogas \r\n\r\n11.Representante do Centro de Arqueologia e Antropologia Forense da UNIFESP; \r\n\r\n12. Representante da Anistia Internacional.",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 2007,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/2007",
+                "sigla": "CDHMIR",
+                "nome": "Comissão de Direitos Humanos, Minorias e Igualdade Racial",
+                "apelido": "Direitos Humanos, Minorias e Igualdade Racial",
+                "codTipoOrgao": 2,
+                "tipoOrgao": "Comissão Permanente",
+                "nomePublicacao": "Comissão de Direitos Humanos, Minorias e Igualdade Racial",
+                "nomeResumido": "Direitos Humanos"
+            }
+        ]
+    },
+    {
+        "id": 76981,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76981",
+        "dataHoraInicio": "2025-06-23T09:56",
+        "dataHoraFim": "2025-06-23T17:55",
+        "situacao": "Encerrada",
+        "descricao": "Seminário Estadual do Plano Nacional de Educação em Minas Gerais\r\n Convidados:\r\n\r\n1) Geovanna Passos Duarte, representante da Associação Mineira de Inspetores Escolares;\r\n2) Valéria Peres Morato, representante do Sindicato dos Professores do Estado de Minas Gerais;\r\n3) Carolina Andrade dos Santos, representante do Sindicato dos Auxiliares de Administração Escolar do Estado de Minas Gerais;\r\n4) Analise de Jesus da Silva, representante do Fórum Estadual Permanente de Educação de Minas Gerais;  \r\n5) Raquel Bernardo dos Santos Lacerda, representante do Sindicato dos Profissionais de Especialista em Educação do Ensino Público do Estado de Minas Gerais - SINDESPE MG;\r\n6) Leonardo Evangelista de Souza, representante da União Colegial de Minas Gerais;  \r\n7) Talita Vitorino Araújo da Silva, representante do Sindicato Único dos Trabalhadores da Educação de Minas Gerais (Sind-UTE/MG);\r\n8) Mário Alvarenga, representante do Instituto Federal de Minas Gerais; \r\n9) Cássia Lara Neves de Araújo, representante da Associação Nacional de Educação Católica do Brasil; \r\n10) Laura Farias, representante do Movimento Popular da Mulher;\r\n11) Osvaldo Mendonça Capelari, representante da União Estadual dos Estudantes de Minas Gerais;\r\n12) Mariana Chagas Lima, representante da União Brasileira dos Estudantes Secundaristas.",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 539777,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/539777",
+                "sigla": "PL261424",
+                "nome": "Comissão Especial destinada a proferir parecer ao Projeto de Lei n. 2614, de 2024, do Poder Executivo, que \"aprova o Plano Nacional de Educação para o decênio 2024-2034\"",
+                "apelido": "PL 2614/24 - Plano Nacional de Educação decênio 2024-2034",
+                "codTipoOrgao": 3,
+                "tipoOrgao": "Comissão Especial",
+                "nomePublicacao": "Comissão Especial sobre o Plano Nacional de Educação 2024-2034 (PL 2614/24)",
+                "nomeResumido": "PNE 2024-2034"
+            }
+        ]
+    },
+    {
+        "id": 76984,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76984",
+        "dataHoraInicio": "2025-06-23T09:36",
+        "dataHoraFim": "2025-06-23T12:15",
+        "situacao": "Encerrada",
+        "descricao": "Seminário Estadual do Plano Nacional de Educação no Estado de Goiás\r\n Convidados: \r\n\r\nDep. Moses Rodrigues - Relator do Plano Nacional de Educação;\r\n\r\nDep. Federal Prof. Alcides\r\n\r\nSEPE - Sindicato dos Estabelecimento Particulares de Ensino Goiânia\r\n\r\nSIMPRO - Sindicato dos Professores no Estado de Goiás\r\n\r\n\r\nUEE-GO - União dos Estudantes Estaduais\r\n\r\n\r\nCEE-GO - Conselho Estadual de Educação de Goiás\r\n\r\n\r\nSECTI - Secretaria de Estado de Ciência, Tecnologia e Inovação\r\n\r\n\r\nFEE - Fórum Estadual da Educação de Goiás\r\n\r\n\r\nTCE GO - Tribunal de Contas do Estado de Goiás \r\n\r\n\r\nUNDIME GO - União Nacional dos Dirigentes Municipaid e Educação - Seccional Goiás\r\n\r\n\r\nAGM - Associação Goiana dos Municípios\r\n\r\n\r\nUEG - Universidade Estadual de Goiás\r\n\r\n\r\nCME - Conselho Municipal de Educação de Goiânia \r\n\r\nSINTEGO: Sindicato dos Trabalhadores em Educação de Goiás\r\n\r\nALEGO - Assembleia Legislativa do Estado de Goiás\r\n\r\n\r\nCME Goiânia - Conselho Municipal de Educação de Goiânia\r\n\r\n\r\nUFG - Universidade Federal de Goiás\r\n\r\nUNIFAN - Centro Universitário Alfredo Nasser\r\n\r\n\r\nRetomada - Secretarria de Estado da Retomada\r\n\r\n\r\nSecretaria de Estado da Economia\r\n\r\n\r\nOrganização: Secretaria de Estado da Educação (SEDUC), Comissão de Especial do Plano Nacional de Educação da Câmara dos Deputados, Conselho Estadual de Educação (CEE-GO) e Fórum Estadual de Educação (FEE)\r\nApoio: Comissão de Educação da Assembleia Legislativa do Estado de Goiás, União Nacional dos Dirigentes Municipais de Educação (UNDIME - Seccional Goiás) e União Nacional dos Conselhos Municipais de Educação de Goiás (UNCME).",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 539777,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/539777",
+                "sigla": "PL261424",
+                "nome": "Comissão Especial destinada a proferir parecer ao Projeto de Lei n. 2614, de 2024, do Poder Executivo, que \"aprova o Plano Nacional de Educação para o decênio 2024-2034\"",
+                "apelido": "PL 2614/24 - Plano Nacional de Educação decênio 2024-2034",
+                "codTipoOrgao": 3,
+                "tipoOrgao": "Comissão Especial",
+                "nomePublicacao": "Comissão Especial sobre o Plano Nacional de Educação 2024-2034 (PL 2614/24)",
+                "nomeResumido": "PNE 2024-2034"
+            }
+        ]
+    },
+    {
+        "id": 76993,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76993",
+        "dataHoraInicio": "2025-06-23T10:10",
+        "dataHoraFim": "2025-06-23T14:23",
+        "situacao": "Encerrada",
+        "descricao": "Seminário Estadual do Plano Nacional de Educação no Pará\r\n Convidados:\r\n\r\n - Deputado Estadual Francisco Melo,Presidente da ALEPA\r\n - Deputado Estadual Thiago Araújo, Presidente da Comissão de Educação da Educação \r\n- Deputado Estadual Dirceu Ten Caten Pies\r\n- Dep. Federal Airton Faleiro\r\n- Dep. Federal Pedro Uczai\r\n- Diego Henrique Maia, Secretário Adjunto de Regime e Colaboração, representante do Secretário Estadual de Educação\r\n- Sandra Helena, Presidente da UNDIME Pará \r\n- Ana Rosa Peixoto, Presidente do Fórum Estadual de Educação",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 539777,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/539777",
+                "sigla": "PL261424",
+                "nome": "Comissão Especial destinada a proferir parecer ao Projeto de Lei n. 2614, de 2024, do Poder Executivo, que \"aprova o Plano Nacional de Educação para o decênio 2024-2034\"",
+                "apelido": "PL 2614/24 - Plano Nacional de Educação decênio 2024-2034",
+                "codTipoOrgao": 3,
+                "tipoOrgao": "Comissão Especial",
+                "nomePublicacao": "Comissão Especial sobre o Plano Nacional de Educação 2024-2034 (PL 2614/24)",
+                "nomeResumido": "PNE 2024-2034"
+            }
+        ]
+    },
+    {
+        "id": 76994,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76994",
+        "dataHoraInicio": "2025-06-24T09:00",
+        "dataHoraFim": "2025-06-24T18:00",
+        "situacao": "Encerrada",
+        "descricao": "Energy Summit Global 2025\r\n (Requerimento nº 27, de 2025, do Deputado Ricardo Barros)\r\n\r\nEnergy Summit Global 2025, evento de referência focado em inovação e empreendedorismo nos setores de energia e sustentabilidade.",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 2002,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/2002",
+                "sigla": "CCTI",
+                "nome": "Comissão de Ciência, Tecnologia e Inovação",
+                "apelido": "Ciência, Tecnologia e Inovação",
+                "codTipoOrgao": 2,
+                "tipoOrgao": "Comissão Permanente",
+                "nomePublicacao": "Comissão de Ciência, Tecnologia e Inovação",
+                "nomeResumido": "Ciência e Tecnologia"
+            }
+        ]
+    },
+    {
+        "id": 76995,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/76995",
+        "dataHoraInicio": "2025-06-25T09:00",
+        "dataHoraFim": "2025-06-25T18:00",
+        "situacao": "Encerrada",
+        "descricao": "Energy Summit Global 2025\r\n (Requerimento nº 27, de 2025, do Deputado Ricardo Barros)\r\n\r\nEnergy Summit Global 2025, evento de referência focado em inovação e empreendedorismo nos setores de energia e sustentabilidade.\r\n\r\nParticipação de comissão representativa da CCTI.",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 2002,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/2002",
+                "sigla": "CCTI",
+                "nome": "Comissão de Ciência, Tecnologia e Inovação",
+                "apelido": "Ciência, Tecnologia e Inovação",
+                "codTipoOrgao": 2,
+                "tipoOrgao": "Comissão Permanente",
+                "nomePublicacao": "Comissão de Ciência, Tecnologia e Inovação",
+                "nomeResumido": "Ciência e Tecnologia"
+            }
+        ]
+    },
+    {
+        "id": 77020,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/eventos/77020",
+        "dataHoraInicio": "2025-06-25T09:21",
+        "dataHoraFim": "2025-06-25T09:24",
+        "situacao": "Encerrada (Final)",
+        "descricao": "Instalação e Eleição de Presidente e Vice-Presidente",
+        "local": "",
+        "url": "",
+        "orgaos": [
+            {
+                "id": 539800,
+                "uri": "https://dadosabertos.camara.leg.br/api/v2/orgaos/539800",
+                "sigla": "SUBTUNEL",
+                "nome": "Subcomissão Especial para acompanhamento das Obras do Túnel Santos-Guarujá",
+                "apelido": "CVT - Obras do Túnel Santos-Guarujá",
+                "codTipoOrgao": 25,
+                "tipoOrgao": "Subcomissão",
+                "nomePublicacao": null,
+                "nomeResumido": null
+            }
+        ]
+    }
+]
