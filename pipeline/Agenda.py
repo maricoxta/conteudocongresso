@@ -1,17 +1,27 @@
-# etl_congresso.py
-
 import requests
 import pandas as pd
+import os
 from datetime import datetime, timedelta
+from sqlalchemy import create_engine
+from dotenv import load_dotenv
 
-# 1. CONFIGURAÇÕES 📌
+# Carrega variáveis do .env
+load_dotenv()
+
+# === CONFIGURAÇÕES ===
 TEMAS = {
-    'Meio Ambiente': ['meio ambiente','ambiental','floresta','biodiversidade','ecologia'],
-    'Saneamento Básico': ['saneamento','água','esgoto','resíduos','abastecimento'],
-    'Defesa Civil': ['defesa civil','desastre','emergência','inundações','chuva','alagamento']
+    'Meio Ambiente': ['meio ambiente', 'ambiental', 'floresta', 'biodiversidade', 'ecologia'],
+    'Saneamento Básico': ['saneamento', 'água', 'esgoto', 'resíduos', 'abastecimento'],
+    'Defesa Civil': ['defesa civil', 'desastre', 'emergência', 'inundações', 'chuva', 'alagamento']
 }
 
-# 2. EXTRAÇÃO
+# Configurações do banco de dados
+DATABASE_URL = (
+    f"postgresql://{os.getenv('PG_USER')}:{os.getenv('PG_PASSWORD')}"
+    f"@{os.getenv('PG_HOST')}:{os.getenv('PG_PORT')}/{os.getenv('PG_DBNAME')}"
+)
+
+# === EXTRAÇÃO ===
 def extrair_camara(data_inicio):
     url = 'https://dadosabertos.camara.leg.br/api/v2/eventos'
     params = {
@@ -20,16 +30,24 @@ def extrair_camara(data_inicio):
         'ordem': 'DESC',
         'ordenarPor': 'dataHoraInicio'
     }
-    resp = requests.get(url, params=params)
-    return resp.json().get('dados', [])
+    response = requests.get(url, params=params)
+    if response.ok:
+        return response.json().get('dados', [])
+    else:
+        print("[ERRO] Falha na requisição da Câmara.")
+        return []
 
 def extrair_senado(data_inicio):
     url = 'https://legis.senado.leg.br/dadosabertos/eventos'
     params = {'dataInicio': data_inicio.strftime('%Y-%m-%d')}
-    resp = requests.get(url, params=params)
-    return resp.json().get('ListaEventos', [])
+    response = requests.get(url, params=params)
+    if response.ok:
+        return response.json().get('ListaEventos', {}).get('Evento', [])
+    else:
+        print("[ERRO] Falha na requisição do Senado.")
+        return []
 
-# 3. TRANSFORMAÇÃO
+# === TRANSFORMAÇÃO ===
 def classificar_tema(texto):
     texto = texto.lower()
     for tema, palavras in TEMAS.items():
@@ -37,56 +55,71 @@ def classificar_tema(texto):
             return tema
     return 'Outros'
 
-def transformar_eventos(raw, orgao):
+def transformar_camara(eventos):
     registros = []
-    for ev in raw:
-        if orgao == 'câmara':
-            id_ev = ev.get('idEvento')
-            situacao = ev.get('situacao')
-            inicio = ev.get('dataHoraInicio')
-            fim = ev.get('dataHoraFim')
-            nome = ev.get('descricaoTipo')
-            assunto = ev.get('assunto') or ''
-            tipo = ev.get('tipoEvento')
-            tipo_orgao = 'camara'
-            nome_publicacao = ev.get('nomePublicacao') or ''
-            local = ev.get('localCamara')
-            link = ev.get('uri')
-        else:  # senado
-            id_ev = ev.get('idevento')
-            situacao = ev.get('situacaoevento')
-            inicio = ev.get('datahorainicio')
-            fim = ev.get('datahorafim')
-            nome = ev.get('tipoevento')
-            assunto = ev.get('assuntoevento')
-            tipo = ev.get('tipoevento')
-            tipo_orgao = 'senado'
-            nome_publicacao = ev.get('nomepublicacao')
-            local = ev.get('localevento')
-            link = ev.get('urlevento')
-        tema = classificar_tema(nome + ' ' + assunto)
+    for ev in eventos:
         registros.append({
-            'id': id_ev,
-            'situacao': situacao,
-            'data_inicio': inicio,
-            'data_fim': fim,
-            'nome': nome,
-            'assunto': assunto,
-            'tipo': tipo,
-            'tipo_orgao': tipo_orgao,
-            'nome_publicacao': nome_publicacao,
-            'tema': tema,
-            'local': local,
-            'link': link
+            'id': ev.get('id'),
+            'situacao': ev.get('situacoesEvento', [{}])[0].get('descricao', ''),
+            'data_inicio': ev.get('dataHoraInicio'),
+            'data_fim': ev.get('dataHoraFim'),
+            'nome': ev.get('descricaoTipo'),
+            'assunto': ev.get('titulo', ''),
+            'tipo': ev.get('tipo'),
+            'tipo_orgao': 'camara',
+            'nome_publicacao': ev.get('nomePublicacao', ''),
+            'tema': classificar_tema(ev.get('descricaoTipo', '') + ' ' + ev.get('titulo', '')),
+            'local': ev.get('localCamara', ''),
+            'link': ev.get('uri')
         })
     return pd.DataFrame(registros)
 
-# 4. CARREGAMENTO
-def carregar_csv(df, caminho='relatorio_eventos.csv'):
-    df.to_csv(caminho, index=False)
-    print(f"[OK] Relatório salvo em {caminho} com {len(df)} linhas.")
+def transformar_senado(eventos):
+    registros = []
+    for ev in eventos:
+        registros.append({
+            'id': ev.get('idevento'),
+            'situacao': ev.get('situacaoevento'),
+            'data_inicio': ev.get('datahorainicio'),
+            'data_fim': ev.get('datahorafim'),
+            'nome': ev.get('tipoevento'),
+            'assunto': ev.get('assuntoevento', ''),
+            'tipo': ev.get('tipoevento'),
+            'tipo_orgao': 'senado',
+            'nome_publicacao': ev.get('nomepublicacao', ''),
+            'tema': classificar_tema(ev.get('tipoevento', '') + ' ' + ev.get('assuntoevento', '')),
+            'local': ev.get('localevento', ''),
+            'link': ev.get('urlevento')
+        })
+    return pd.DataFrame(registros)
 
-# 5. PIPELINE PRINCIPAL
+# === CARREGAMENTO ===
+def carregar_postgres(df, tabela='eventos_congresso'):
+    engine = create_engine(DATABASE_URL)
+    df.to_sql(tabela, engine, if_exists='replace', index=False)
+    print(f"[OK] Dados carregados no PostgreSQL na tabela '{tabela}'.")
+
+# === DASHBOARD ===
+def carregar_dataframe():
+    """
+    Retorna um DataFrame com os eventos da tabela 'eventos_congresso',
+    renomeando as colunas para o formato esperado pelo dashboard.
+    """
+    engine = create_engine(DATABASE_URL)
+    query = """
+        SELECT
+            nome AS "Título",
+            data_inicio AS "Data e Hora Início",
+            local AS "Local",
+            link AS "Link"
+        FROM eventos_congresso
+    """
+    df = pd.read_sql(query, engine)
+    if 'Data e Hora Início' in df.columns:
+        df['Data e Hora Início'] = pd.to_datetime(df['Data e Hora Início'])
+    return df
+
+# === PIPELINE ===
 def run_pipeline(dias=7):
     data_inicio = datetime.now() - timedelta(days=dias)
     print(f"[INFO] Extraindo eventos desde {data_inicio.date()}...")
@@ -94,16 +127,17 @@ def run_pipeline(dias=7):
     raw_cam = extrair_camara(data_inicio)
     raw_sen = extrair_senado(data_inicio)
 
-    print(f"[INFO] Transformando {len(raw_cam)} eventos da Câmara e {len(raw_sen)} do Senado...")
-    df_cam = transformar_eventos(raw_cam, 'câmara')
-    df_sen = transformar_eventos(raw_sen, 'senado')
+    print(f"[INFO] Transformando eventos...")
+    df_cam = transformar_camara(raw_cam)
+    df_sen = transformar_senado(raw_sen)
 
     df = pd.concat([df_cam, df_sen], ignore_index=True)
     df['data_inicio'] = pd.to_datetime(df['data_inicio'])
     df['data_fim'] = pd.to_datetime(df['data_fim'], errors='coerce')
 
     print(f"[INFO] Total de eventos processados: {len(df)}")
-    carregar_csv(df)
+    carregar_postgres(df)
 
+# === EXECUÇÃO ===
 if __name__ == "__main__":
-    run_pipeline(dias=7)
+    run_pipeline()
