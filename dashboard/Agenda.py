@@ -55,22 +55,23 @@ def classificar_tema(texto):
             return tema
     return 'Outros'
 
-def transformar_camara(eventos):
+def transformar_camara(eventos, orgao='camara'):
     registros = []
     for ev in eventos:
+        tema = classificar_tema(ev.get("descricaoTipo", "") + ' ' + ev.get("assunto", ""))
         registros.append({
-            'id': ev.get('id'),
-            'situacao': ev.get('situacoesEvento', [{}])[0].get('descricao', ''),
-            'data_inicio': ev.get('dataHoraInicio'),
-            'data_fim': ev.get('dataHoraFim'),
-            'nome': ev.get('descricaoTipo'),
-            'assunto': ev.get('titulo', ''),
-            'tipo': ev.get('tipo'),
-            'tipo_orgao': 'camara',
-            'nome_publicacao': ev.get('nomePublicacao', ''),
-            'tema': classificar_tema(ev.get('descricaoTipo', '') + ' ' + ev.get('titulo', '')),
-            'local': ev.get('localCamara', ''),
-            'link': ev.get('uri')
+            "id": ev.get("idEvento"),
+            "situacao": ev.get("situacao"),
+            "data_inicio": ev.get("dataHoraInicio"),
+            "data_fim": ev.get("dataHoraFim"),
+            "nome": ev.get("descricaoTipo"),
+            "assunto": ev.get("assunto", ""),
+            "tipo": ev.get("tipoEvento"),
+            "tipo_orgao": orgao,
+            "nome_publicacao": ev.get("nomePublicacao", ""),
+            "tema": tema,
+            "local": ev.get("localCamara", ""),
+            "link": ev.get("uri")
         })
     return pd.DataFrame(registros)
 
@@ -110,7 +111,9 @@ def carregar_dataframe():
         SELECT
             nome AS "Título",
             data_inicio AS "Data e Hora Início",
+            assunto AS "Assunto",
             local AS "Local",
+            tema AS "Tema",
             link AS "Link"
         FROM eventos_congresso
     """
