@@ -18,24 +18,24 @@ if not avisos.empty:
 
 # 📆 Calendário — simplificado por dia
 df["dia"] = df["Data e Hora Início"].dt.date
-cal_count = df.groupby("dia")["id"].count().reset_index()
-fig = px.bar(cal_count, x="dia", y="id", title="Eventos por Dia")
+cal_count = df.groupby("dia").size().reset_index(name="eventos")
+fig = px.bar(cal_count, x="dia", y="eventos", title="Eventos por Dia")
 st.plotly_chart(fig)
 
 # 📋 Lista por área técnica
-for area in df["tema"].unique():
+for area in df["Tema"].unique():
     st.subheader(area)
-    st.table(df[df["tema"] == area][[
-        "data_inicio", "nome", "tipo", "local", "link"
+    st.table(df[df["Tema"] == area][[
+        "Data e Hora Início", "Título", "Assunto", "Local", "Link"
     ]])
 
 # 📊 Indicador semanal
 hoje = datetime.now().date()
-sem = df[df["data_inicio"].dt.date >= hoje - timedelta(days=7)]
-ant = df[df["data_inicio"].dt.date.between(hoje - timedelta(days=14), hoje - timedelta(days=7))]
-res = sem.groupby("tema")["id"].count().reset_index(name="atual")
-ant = ant.groupby("tema")["id"].count().reset_index(name="anterior")
-comp = pd.merge(res, ant, on="tema", how="left").fillna(0)
+sem = df[df["Data e Hora Início"].dt.date >= hoje - timedelta(days=7)]
+ant = df[df["Data e Hora Início"].dt.date.between(hoje - timedelta(days=14), hoje - timedelta(days=7))]
+res = sem.groupby("Tema").size().reset_index(name="atual")
+ant = ant.groupby("Tema").size().reset_index(name="anterior")
+comp = pd.merge(res, ant, on="Tema", how="left").fillna(0)
 comp["var%"] = ((comp["atual"]-comp["anterior"])/comp["anterior"].replace(0,1))*100
 st.subheader("📊 Indicadores Semanais")
 st.table(comp)
