@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
-from pipeline.Agenda import carregar
-from dotenv import load_dotenv
+from pipeline.Agenda import carregar_dataframe
 
 # Palavras-chave por tema
 temas = {
@@ -24,10 +23,10 @@ st.title("📅 Acompanhamento de Reuniões - Congresso Nacional")
 
 # Carregando os dados da Agenda.py
 st.info("🔄 Carregando dados mais recentes da Câmara dos Deputados...")
-df = carregar()  # A função deve retornar um DataFrame
+df = carregar_dataframe()  # A função deve retornar um DataFrame
 
 # Classificando eventos por tema
-df['Tema'] = df['Título'].apply(classificar_evento)
+df['Tema'] = df['nomeResumido'].apply(classificar_evento)
 
 # Filtros
 temas_opcao = st.multiselect("Filtrar por tema:", options=list(temas.keys()), default=list(temas.keys()))
@@ -55,8 +54,3 @@ else:
 # Rodapé
 st.markdown("---")
 st.caption("Atualizado automaticamente com dados da API da Câmara dos Deputados.")
-
-
-
-
-
