@@ -15,11 +15,14 @@ TEMAS = {
     'Defesa Civil': ['defesa civil', 'desastre', 'emergência', 'inundações', 'chuva', 'alagamento']
 }
 
-# Configurações do banco de dados
-DATABASE_URL = (
-    f"postgresql://{os.getenv('PG_USER')}:{os.getenv('PG_PASSWORD')}"
-    f"@{os.getenv('PG_HOST')}:{os.getenv('PG_PORT')}/{os.getenv('PG_DBNAME')}"
-)
+# Configurações do banco de dados com valores padrão
+PG_HOST = os.getenv('PG_HOST', 'localhost')
+PG_PORT = os.getenv('PG_PORT', '5432')
+PG_DBNAME = os.getenv('PG_DBNAME', 'congresso_db')
+PG_USER = os.getenv('PG_USER', 'postgres')
+PG_PASSWORD = os.getenv('PG_PASSWORD', 'senha123')
+
+DATABASE_URL = f"postgresql://{PG_USER}:{PG_PASSWORD}@{PG_HOST}:{PG_PORT}/{PG_DBNAME}"
 
 # === EXTRAÇÃO ===
 def extrair_camara(data_inicio):
@@ -96,9 +99,15 @@ def transformar_senado(eventos):
 
 # === CARREGAMENTO ===
 def carregar_postgres(df, tabela='eventos_congresso'):
-    engine = create_engine(DATABASE_URL)
-    df.to_sql(tabela, engine, if_exists='replace', index=False)
-    print(f"[OK] Dados carregados no PostgreSQL na tabela '{tabela}'.")
+    try:
+        engine = create_engine(DATABASE_URL)
+        df.to_sql(tabela, engine, if_exists='replace', index=False)
+        print(f"[OK] Dados carregados no PostgreSQL na tabela '{tabela}'.")
+    except Exception as e:
+        print(f"[ERRO] Falha ao carregar dados no PostgreSQL: {e}")
+        print("[INFO] Salvando dados em CSV como alternativa...")
+        df.to_csv('eventos_congresso.csv', index=False)
+        print("[OK] Dados salvos em eventos_congresso.csv")
 
 # === DASHBOARD ===
 def carregar_dataframe():
@@ -106,21 +115,42 @@ def carregar_dataframe():
     Retorna um DataFrame com os eventos da tabela 'eventos_congresso',
     renomeando as colunas para o formato esperado pelo dashboard.
     """
-    engine = create_engine(DATABASE_URL)
-    query = """
-        SELECT
-            nome AS "Título",
-            data_inicio AS "Data e Hora Início",
-            assunto AS "Assunto",
-            local AS "Local",
-            tema AS "Tema",
-            link AS "Link"
-        FROM eventos_congresso
-    """
-    df = pd.read_sql(query, engine)
-    if 'Data e Hora Início' in df.columns:
-        df['Data e Hora Início'] = pd.to_datetime(df['Data e Hora Início'])
-    return df
+    try:
+        engine = create_engine(DATABASE_URL)
+        query = """
+            SELECT
+                nome AS "Título",
+                data_inicio AS "Data e Hora Início",
+                assunto AS "Assunto",
+                local AS "Local",
+                tema AS "Tema",
+                link AS "Link"
+            FROM eventos_congresso
+        """
+        df = pd.read_sql(query, engine)
+        if 'Data e Hora Início' in df.columns:
+            df['Data e Hora Início'] = pd.to_datetime(df['Data e Hora Início'])
+        return df
+    except Exception as e:
+        print(f"[ERRO] Falha ao carregar dados do PostgreSQL: {e}")
+        print("[INFO] Tentando carregar dados do CSV...")
+        try:
+            df = pd.read_csv('eventos_congresso.csv')
+            # Renomear colunas para o formato esperado
+            df = df.rename(columns={
+                'nome': 'Título',
+                'data_inicio': 'Data e Hora Início',
+                'assunto': 'Assunto',
+                'local': 'Local',
+                'tema': 'Tema',
+                'link': 'Link'
+            })
+            if 'Data e Hora Início' in df.columns:
+                df['Data e Hora Início'] = pd.to_datetime(df['Data e Hora Início'])
+            return df
+        except Exception as csv_error:
+            print(f"[ERRO] Falha ao carregar dados do CSV: {csv_error}")
+            return pd.DataFrame()  # Retorna DataFrame vazio em caso de erro
 
 # === PIPELINE ===
 def run_pipeline(dias=7):
