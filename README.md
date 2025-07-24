@@ -1,29 +1,64 @@
-# Automação do Monitoramento do Conteúdo do Congresso
-Criação de um programa automatizado para realizar diariamente o monitoramento dos sites da Câmara dos Deputados e do Senado Federal e obter as informações sobre alterações nos Projetos de Lei, Emendas Parlamentares, Requerimentos e Audiências que englobam assuntos relacionados às áreas de Saneamento Básico, Meio Ambiente e Defesa Civil. 
+# Acompanhamento Congresso Nacional
 
-Após realizar uma varredura nos sites, o programa encaminha um relatório por e-mail com projetos relevantes às áreas técnicas da Confederação Nacional de Municípios. 
+Este projeto tem como objetivo **monitorar e acompanhar eventos e proposições legislativas** relacionadas às áreas de **saneamento básico, meio ambiente e defesa civil** no Congresso Nacional (Câmara dos Deputados e Senado Federal).
 
-# Ferramenta Utilizada 
-Python 
+## Objetivo
 
-# Diagrama
+O objetivo principal é facilitar o acesso e a análise de informações legislativas relevantes para essas áreas técnicas, permitindo que profissionais e gestores possam:
 
-![image](https://github.com/user-attachments/assets/0e08de92-a409-4ac9-8ff0-150edd0ec4f1)
+- Identificar rapidamente reuniões, audiências e votações de interesse.
+- Receber alertas sobre proposições importantes (como Projetos de Lei).
+- Visualizar indicadores semanais e tendências de atuação parlamentar.
+- Gerar relatórios e enviar notificações automáticas para equipes técnicas.
 
-# Etapas
+## Como funciona
 
-1️⃣ Identificar as fontes oficiais para as agendas da Câmara dos Deputados e do Senado Federal, priorizando APIs públicas ou portais de dados estruturados, conforme ilustrado nos passos 'Coletar dados do Senado' e 'Coletar dados da Câmara' do diagrama.
+O projeto realiza as seguintes etapas:
 
-2️⃣ Analisar a estrutura e o formato dos dados das agendas (por exemplo, HTML, JSON, XML) para determinar como extrair informações específicas como data, hora, nome da comissão, tipo de evento, local, tema e link do evento, que são requisitos para o relatório final.
+1. **Extração de dados:**  
+   Utiliza APIs públicas da Câmara dos Deputados e do Senado Federal para coletar eventos e proposições legislativas.
 
-3️⃣ Pesquisar métodos para acessar e analisar programaticamente as fontes de agenda identificadas, considerando técnicas de web scraping para conteúdo HTML ou utilizando a documentação da API para dados estruturados, correspondendo ao passo 'Tratar os dados'.
+2. **Processamento e classificação:**  
+   Os dados são tratados e classificados automaticamente conforme temas de interesse (saneamento, meio ambiente, defesa civil), usando palavras-chave e regras definidas no código.
 
-4️⃣ Investigar estratégias eficazes para filtrar os tópicos da agenda extraídos com base em palavras-chave como 'saneamento', 'meio ambiente' e 'defesa civil', conforme indicado no passo 'Criar Filtros' do diagrama.
+3. **Armazenamento:**  
+   Os eventos são salvos em um banco de dados PostgreSQL para consulta e análise.
 
-5️⃣ Explorar abordagens e ferramentas comuns para agendar a execução automatizada de scripts Python de forma recorrente, especificamente para um cronograma semanal (por exemplo, toda segunda-feira às 8h), alinhando-se ao passo 'Gerar alertas com base na periodicidade definida'.
+4. **Dashboard interativo:**  
+   Um painel desenvolvido com Streamlit permite visualizar os eventos por área técnica, acompanhar indicadores semanais, consultar o calendário de reuniões e receber alertas sobre proposições relevantes.
 
-6️⃣ Encontrar informações sobre bibliotecas Python e melhores práticas para compor e enviar e-mails programaticamente, garantindo a capacidade de incluir os detalhes da agenda extraídos em um formato de relatório estruturado, como mostrado no passo 'Encaminhar e-mail'.
+5. **Notificações automáticas:**  
+   O sistema pode enviar e-mails para equipes técnicas com a agenda semanal e alertas personalizados.
 
-7️⃣ Procurar por projetos de código aberto, bibliotecas ou exemplos existentes relacionados ao monitoramento de atividades legislativas ou dados públicos no Brasil, que possam oferecer insights sobre acesso a dados, análise ou técnicas de automação.
+## Tecnologias utilizadas
 
-8️⃣ Sintetizar todas as informações coletadas para fornecer uma visão geral abrangente dos componentes técnicos e etapas necessárias para construir o script de automação descrito.
+- Python
+- Streamlit (dashboard)
+- Pandas (tratamento de dados)
+- SQLAlchemy (conexão com banco de dados)
+- PostgreSQL (armazenamento)
+- Requests (extração de dados das APIs)
+- Plotly (visualização gráfica)
+
+## Como executar
+
+1. Instale as dependências:
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+2. Configure o arquivo `.env` com suas credenciais do banco de dados.
+
+3. Execute o pipeline para atualizar os dados:
+   ```sh
+   python pipeline/Agenda.py
+   ```
+
+4. Inicie o dashboard:
+   ```sh
+   streamlit run dashboard/Painel_Agenda.py
+   ```
+
+---
+
+**Este projeto é uma ferramenta de apoio à gestão pública, promovendo transparência e agilidade no acompanhamento legislativo das áreas de saneamento, meio ambiente e defesa civil.**
